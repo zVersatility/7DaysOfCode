@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 05 07Days of Code </title>
+    <link rel="stylesheet" href="styles5.css">
+</head>
+<body>
+    <h1>Ejercicio 05 07Days of Code</h1>
+    <div class="div_select">
+    <label>Seleccione la Categoria del alimento a ingresar</label>
+    <select id="categorias">
+        <option value="">Seleccione</option>
+        <option value="Frutas">Frutas</option>
+        <option value="Vegetales">Vegetales</option>
+        <option value="Carnes">Carnes</option>
+        <option value="Lacteos">Lacteos</option>
+        <option value="Bebidas">Bebidas</option>
+        <option value="Congelados">Congelados</option>
+        <option value="Dulces">Dulces</option>
+    </select>
+    </div>
+
+    <div class="div_btn">
+        <label>Ingrese el alimento Categoria : <span id="spanCategoria"></span></label>
+        <input type="text" id="alimento">  
+    </div>
+    <div class="div_btns">
+        <button type="button" value="sutmit" id="btnagregar">Agregar</button>
+        <button type="button" value="sutmit" id="btnfinalizar">Finalizar Lista</button>
+    </div>
+    
+    <div class="div_resultado">
+        <h2>Lista de Compras :</h2>
+        <p id="frutas"></p>
+        <p id="vegetales"></p>
+        <p id="carnes"></p>
+        <p id="lacteos"></p>
+        <p id="bebidas"></p>
+        <p id="congelados"></p>
+        <p id="dulces"></p>
+
+    </div>  
+</body>
+<script src="ejercicio5.js"></script>
+</html>

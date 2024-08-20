@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <form method="post" id="miFormulario" >
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required pattern="[A-Za-z\s]+">
+            
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" min="13" max="120" required>
+            
+            <label for="leng">Lenguaje que estudias:</label>
+            <select id="leng" required>
+                <option value="1" name="JavaScript">JavaScript</option>
+                <option value="2" name="Java">Java</option>
+                <option value="3" name="C" >C</option>
+                <option value="4" name="C++">C++</option>
+                <option value="5" name="Python">Python</option>
+                <option value="6" name="Visual">Visual</option>
+                <option value="7" name="Otro">Otro</option>
+            </select>
+            <div id="divOtro" style="display: none;">
+                <label>¿Qué Lenguaje estudias?</label>
+                <input type="text" id="otroLeng" name="otroLeng">
+            </div>
+            
+            <input type="submit" value="submit">
+        </form>  
+        <div id="div1" style="display: none;">
+            <h2>Resultado:</h2>
+            <p>Nombre: <span id="nameResult"></span></p>
+            <p>Edad: <span id="ageResult"></span></p>
+            <p>Lenguaje: <span id="langResult"></span></p>
+            <p>Cadena : <span id="cadenatotal"></span></p>
+        </div>
+        <div id="div2" style="display: none;">
+            <label id="labelpregunta"></label>
+            <input type="number" id="respuestaPregunta" min="1"  max="2" name="respuesta">
+            <button type="submit" value="submit" id="btnrespuesta" onclick="btnRespuesta();">Enviar</button>
+            <span id="mensajerespuesta"></span>
+        </div>
+    </main>
+    <script src="ejericiopreguntas.js"></script>
+</body>
+</html>

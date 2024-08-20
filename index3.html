@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercio 03 07Days of Code</title>
+    <link rel="stylesheet" href="styles.css" >
+</head>
+<body>
+    <h1 class="h1_ejercicio03">¡Bienvenido developer!</h1>
+    <main>
+    <div class="div_fbend">
+        <label for="select_fbend">¿Qué Camino tomaras este 27 de agosto?</label>
+        <select id="select_fbend" required>
+            <option value="">Seleccione</option>
+            <option value="Front">Front-End</option>
+            <option value="Back">Back-End</option>
+        </select>
+    </div>
+    <div class="div_front" id="div_front" style="display: none;">
+        <label for="Opt_front">¿Que deseas aprender en Front-End?</label>
+        <select id="Opt_front">
+            <option value="">Seleccione</option>
+            <option value="React">React</option>
+            <option value="Vue">Vue</option>    
+        </select>
+    </div>
+    <div class="div_back" id="div_back" style="display: none;">
+        <label for="Opt_back">¿Que deseas aprender en Back-End?</label>
+        <select id="Opt_back">
+            <option value="">Seleccione</option>
+            <option value="C#">C#</option>
+            <option value="Java">Java</option>
+        </select>
+    </div>
+    <div class="div_camino" id="div_camino" style="display: none;">
+        <label for="Opt_camino" id="label_camino">Mensaje Prueba</label>
+        <select id="Opt_camino">
+            <option value="">Seleccione</option>
+            <option value="Especializacion">Especialización</option>
+            <option value="Fullstack">Fullstack</option>
+        </select>
+        
+    </div>
+    <span id="mensaje_camino" style="display: none;" >Mensaje Prueba</span> 
+    <div class="div_form" style="display: none;" id="div_form">
+        <form id="techForm">
+            <label for="techInput">¿En que tecnologias te gustaria especializarte?</label>
+            <input type="text" id="techInput" placeholder="Ej. JavaScript">
+            
+            <button type="button" id="addButton">Agregar otra</button>
+            <button type="button" id="finishButton">Finalizar</button>
+            
+            <!-- <ul id="techList"></ul> -->
+        </form>
+    </div>
+    <p id="resultMessage"></p>
+
+    </main>
+    <script src="ejercicio3.js"></script>
+</body>
+</html>

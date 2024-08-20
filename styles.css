@@ -1,0 +1,50 @@
+
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    background-color: aquamarine;
+    margin-left: 24%;
+    margin-right: 24%;
+    padding: 3rem;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+.div_fbend ,.div_front,.div_back,.div_camino{
+    display: flex;
+    justify-content: space-between;
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+    height: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+.div_fbend label,
+.div_fbend select,
+.div_front label,
+.div_front select,
+.div_back label,
+.div_back select,
+.div_camino label,
+.div_camino select {
+    width: 48%; /* Ocupa aproximadamente la mitad del contenedor, ajustado para el espacio */
+}
+
+.div_fbend select {
+    margin-left: 4%; /* Ajusta el espacio entre el label y el select */
+}
+
+.h1_ejercicio03{
+    text-align: center;
+}
+
+#mensaje_camino{
+    padding: 3rem;
+}
+
+#techForm{
+    display: flex;
+}
+
