@@ -7,41 +7,83 @@
     <link rel="stylesheet" href="styles5.css">
 </head>
 <body>
-    <h1>Ejercicio 05 07Days of Code</h1>
-    <div class="div_select">
-    <label>Seleccione la Categoria del alimento a ingresar</label>
-    <select id="categorias">
-        <option value="">Seleccione</option>
-        <option value="Frutas">Frutas</option>
-        <option value="Vegetales">Vegetales</option>
-        <option value="Carnes">Carnes</option>
-        <option value="Lacteos">Lacteos</option>
-        <option value="Bebidas">Bebidas</option>
-        <option value="Congelados">Congelados</option>
-        <option value="Dulces">Dulces</option>
-    </select>
-    </div>
+    <div class="container">
+        <section id="section_05" style="display: block;">
+            <h1 id="h1ejercicio05">Ejercicio 05 07Days of Code</h1>
+        <div class="div_select" id="div_select">
+        <label for="categorias">Seleccione la Categoria del alimento a ingresar</label>
+        <select id="categorias">
+            <option value="">Seleccione</option>
+            <option value="Frutas">Frutas</option>
+            <option value="Vegetales">Vegetales</option>
+            <option value="Carnes">Carnes</option>
+            <option value="Lacteos">Lacteos</option>
+            <option value="Bebidas">Bebidas</option>
+            <option value="Congelados">Congelados</option>
+            <option value="Dulces">Dulces</option>
+        </select>
+        </div>
+    
+        <div class="div_btn" id="div_btn">
+            <label for="alimento">Ingrese el alimento Categoria : <span id="spanCategoria"></span></label>
+            <input type="text" id="alimento">  
+        </div>
+        <div class="div_btns" id="div_btns">
+            <button type="button" value="sutmit" id="btnagregar">Agregar</button>
+            <button type="submit" value="submit" id="btneliminar" style="display: none;">Eliminar Producto</button>
+        </div>
+        
+        <div class="div_resultado" id="div_resultado">
+            <h2>Lista de Compras :</h2>
+            <p id="frutas"></p>
+            <p id="vegetales"></p>
+            <p id="carnes"></p>
+            <p id="lacteos"></p>
+            <p id="bebidas"></p>
+            <p id="congelados"></p>
+            <p id="dulces"></p>
+        </div>  
+    
+        </section>
+        
+    
+    
+        <!-- Seccion ejercicio 06 -->
+    
+        <section id="seccion_ejercicio06"  style="display: none;">
+            <h1>Ejercicio 06 07Days of Code</h1>
+            <div class="div_select">
+                <label for="categorias6">Selecciona la categoria del alimento a eliminar</label>
+                <select id="categorias6">
+                    <option value="">Seleccione</option>
+                    <option value="Frutas">Frutas</option>
+                    <option value="Vegetales">Vegetales</option>
+                    <option value="Carnes">Carnes</option>
+                    <option value="Lacteos">Lacteos</option>
+                    <option value="Bebidas">Bebidas</option>
+                    <option value="Congelados">Congelados</option>
+                    <option value="Dulces">Dulces</option>
+                </select>
+            </div>
+            <div id="div__resultado_eliminar">
+                <h2>Listado de alimentos Categoria : <span id="spanCategoria6"></span></h2>
+                <ul id="frutas-lista"></ul>
+                
+            </div>
+            <div id="div_inputElimina" class="div_inputElimina " style="display: none;">
+                <label for="alimento6">Ingresa el alimento a eliminar</label>
+                <input type="text" id="alimento6">  
+            </div>
+            <div class="div_btncategoria6">
+                <button type="button" value="submit" id="btneliminar6" style="display: none;">Eliminar</button>
+                <button type="button" value="submit" id="btnvolver" style="display: block;">Volver</button>
+            </div>
+        </section> 
 
-    <div class="div_btn">
-        <label>Ingrese el alimento Categoria : <span id="spanCategoria"></span></label>
-        <input type="text" id="alimento">  
-    </div>
-    <div class="div_btns">
-        <button type="button" value="sutmit" id="btnagregar">Agregar</button>
-        <button type="button" value="sutmit" id="btnfinalizar">Finalizar Lista</button>
     </div>
     
-    <div class="div_resultado">
-        <h2>Lista de Compras :</h2>
-        <p id="frutas"></p>
-        <p id="vegetales"></p>
-        <p id="carnes"></p>
-        <p id="lacteos"></p>
-        <p id="bebidas"></p>
-        <p id="congelados"></p>
-        <p id="dulces"></p>
-
-    </div>  
+        
+    
 </body>
-<script src="ejercicio5.js"></script>
+<script src="ejercicio5new.js"></script>
 </html>
