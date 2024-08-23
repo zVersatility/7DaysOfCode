@@ -1,0 +1,145 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #202124;  
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#h1_1{
+    font-size: 30px;
+    color: white;
+    margin-bottom: 20px;
+    
+}
+
+#h1_1:hover{
+    color: #f00;
+}
+
+.calculadora {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: #333;
+    padding: 20px;
+    color: white;
+    margin-left: 1rem;
+}
+
+.pantalla {
+    width: 100%;
+    height: 50px;
+    background-color: #000;
+    border: none;
+    border-radius: 5px;
+    text-align: right;
+    padding: 2px;
+    font-size: 24px;
+    color: white;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.operacion {
+    font-size: 16px;
+    color: #aaa;
+    margin-bottom: 5px;
+}
+
+.resultado {
+    font-size: 24px;
+    color: white;
+}
+
+.botones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.botones button {
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #555;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.botones button:hover {
+    background-color: #777;
+}
+
+.botones .operador {
+    background-color: #ff9500;
+}
+
+.botones .operador:hover {
+    background-color: #ffa733;
+}
+
+.botones .igual {
+    background-color: #007bff;
+    grid-column: span 2;
+}
+
+.botones .igual:hover {
+    background-color: #0056b3;
+}
+
+.botones .limpiar {
+    background-color: #dc3545;
+}
+
+.botones .limpiar:hover {
+    background-color: #c82333;
+}
+
+#h1des {
+    font-size: 3em;
+    color: #fff;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    position: relative;
+    animation: fadeIn 2s ease-in-out forwards, gradientText 3s ease-in-out infinite;
+    background: linear-gradient(90deg, #ff6e7f, #bfe9ff, #ff6e7f);
+    background-size: 200%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes gradientText {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 100%;
+    }
+}

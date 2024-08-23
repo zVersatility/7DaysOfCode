@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 07 07Days of Code</title>
+    <link rel="stylesheet" href="styles7.css"> <!-- Enlace al estilo CSS -->
+</head>
+<body>
+    <div class="calculadora" style="display: block;" id="idcalculadora">
+        <h2>Ejercicio 07 07Days of Code || Calculadora</h2>
+        <input type="number" id="numero1" placeholder="Ingrese el primer número">
+        <input type="number" id="numero2" placeholder="Ingrese el segundo número">
+        <input type="number" id="resultado" disabled placeholder="Resultado">
+        <div class="botones">
+            <button onclick="calcular('suma')">Suma</button>
+            <button onclick="calcular('resta')">Resta</button>
+            <button onclick="calcular('multiplicacion')">Multiplicación</button>
+            <button onclick="calcular('division')">División</button>
+            <button class="salir" onclick="salir()">Salir</button>
+        </div>
+    </div>
+    <div>
+        <h1 id="h1des" style="display: none;">Hasta la próxima</h1>
+    </div>
+<script src="ejercicio7.js"></script> <!-- Enlace al script JavaScript -->
+</body>
+</html>

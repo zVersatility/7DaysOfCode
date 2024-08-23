@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculadora.css">
+    <title>Ejercicio 07 07Days of Code</title>
+    
+</head>
+<body>
+    <div id="container" style="display: block;">
+        <h1 id="h1_1">Ejercicio 07 07Days of Code</h1>
+        <div class="calculadora">
+            <div class="pantalla">
+                <div id="operacion" class="operacion"></div>
+                <div id="resultado" class="resultado">0</div>
+            </div>
+            <div class="botones">
+                <button class="limpiar" onclick="limpiar()">C</button>
+                <button class="operador" onclick="agregarOperador('/')">/</button>
+                <button class="operador" onclick="agregarOperador('*')">*</button>
+                <button class="operador" onclick="agregarOperador('-')">-</button>
+
+                <button onclick="agregarNumero('7')">7</button>
+                <button onclick="agregarNumero('8')">8</button>
+                <button onclick="agregarNumero('9')">9</button>
+                <button class="operador" onclick="agregarOperador('+')">+</button>
+
+                <button onclick="agregarNumero('4')">4</button>
+                <button onclick="agregarNumero('5')">5</button>
+                <button onclick="agregarNumero('6')">6</button>
+                <button onclick="salir()">Salir</button>
+                <button class="igual" onclick="calcular()">=</button>
+
+                <button onclick="agregarNumero('1')">1</button>
+                <button onclick="agregarNumero('2')">2</button>
+                <button onclick="agregarNumero('3')">3</button>
+
+                <button onclick="agregarNumero('0')" style="grid-column: span 2;">0</button>
+                <button onclick="agregarNumero('.')">.</button>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h1 id="h1des" style="display: none;">Hasta la próxima</h1>
+    </div>
+    <script src="calculadora.js"></script>
+</body>
+</html>
